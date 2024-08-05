@@ -1,0 +1,79 @@
+
+
+
+.card-view{
+    width: 80vw;
+	background-color: white;
+	border-radius: 0.55rem;
+	box-shadow: 10 10 25 gray;
+}
+
+.Inventory-main-container{
+    display: flex;
+    gap:2px;
+    height: 100%;
+}
+.Inventory-main-container>div{
+    flex:1;
+}
+.Inventory-main-left-container{
+    border-right: 1px solid rgb(172, 169, 169);
+    height: 100%;
+    padding: 1.25rem 2.5rem;
+}
+.Inventory-heading-title{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.question-container{
+    height: max-content;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+}
+.Inventory-main-right-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Inventory-answear-container{
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.Inventory-answear-container-box{
+    border: 1px solid rgb(185, 181, 181);
+    padding: 1.25rem 0.75rem;
+    border-radius: 5px;
+    width: 80%;
+}
+.Inventory-height{
+    height: 85vh;
+}
+.bottom-btn-main-container{
+    border-top: 1px solid rgb(205, 205, 208);
+}
+.next-btn-container {
+    margin: 1.5rem 1rem;
+    float: right;
+    padding: 0.75rem 1rem;
+    background-color: rgba(15, 118, 110, 1);
+    color:white;
+    border-radius: 5px;
+    border:none;
+    
+}
+
+@media only screen and (max-width: 746px) {
+    .Inventory-main-container{
+        flex-direction: column;
+    }
+
+}

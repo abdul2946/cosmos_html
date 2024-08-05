@@ -41,6 +41,9 @@
 .text-sm{
 	font-size: 14px;
 }
+.text-md{
+	font-size: 18px;
+}
 
 .width-full {
 	width: 100%;
