@@ -98,11 +98,17 @@ a{
 }
 
 
-.main-section {
+.bg-base {
 	background-color: #f5f5f5;
-	height: 100vh;
+}
+.bg-white{
+	background-color: white;
+}
+
+
+.view-full{
+height: 100vh;
 	width: 100vw;
-	
 }
 .grid-center{
 	display: grid;
