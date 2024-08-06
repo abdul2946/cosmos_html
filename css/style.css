@@ -55,7 +55,7 @@
 .my-2 {
 	margin: 1rem 0;
 }
-.mt-auto{
+.mt-auto {
 	margin-top: auto;
 }
 .px-5 {
@@ -84,13 +84,13 @@
 	background-color: #0f766e;
 	color: white;
 }
-.btn-outline-green{
- outline: none;
- border: 2px solid #0F766E;
- color: #0F766E;
- padding: 0.5rem 0.75rem;
- background-color: white;
- border-radius: 0.25rem;
+.btn-outline-green {
+	outline: none;
+	border: 2px solid #0f766e;
+	color: #0f766e;
+	padding: 0.5rem 0.75rem;
+	background-color: white;
+	border-radius: 0.25rem;
 }
 a {
 	color: black;
@@ -146,7 +146,7 @@ a {
 	height: 100%;
 	width: 100%;
 }
-.flex-center{
+.flex-center {
 	display: flex;
 	justify-items: center;
 	align-items: center;
@@ -158,6 +158,17 @@ a {
 	width: 80vw;
 }
 
+@media (min-width: 640px) {
+	.begining-assesment_main {
+		display: flex;
+	}
+}
+.begining-assesment_main {
+	background-color: white;
+	padding: 1.25rem 2.5rem;
+	border-radius: 0.55rem;
+	box-shadow: 10 10 25 gray;
+}
 .card {
 	background-color: white;
 	padding: 1.25rem 2.5rem;
@@ -204,14 +215,21 @@ a {
 	padding: 0.5rem;
 }
 
-.menu_section {
-	padding-right: 1.25rem;
-	width: 30%;
-	border-right: 1px solid #d1d5db;
+@media screen and (min-width: 640px) {
+	.menu_section {
+		padding-right: 1.25rem;
+		width: 30%;
+		border-right: 1px solid #d1d5db;
+	}
+}
+
+@media (min-width: 640px) {
+	.details_section {
+		padding-left: 1.25rem;
+	}
 }
 
 .details_section {
-	padding-left: 1.25rem;
 	display: flex;
 	flex-direction: column;
 	gap: 10rem;
@@ -219,24 +237,37 @@ a {
 .details_section ul > li {
 	margin-left: 2rem;
 }
-.allow_section{
+
+@media (min-width: 640px) {
+	.title-description_text{
+		border-radius: 0.25rem;
+	}
+}
+
+.title-description_text{
+	background-color: white;
+	padding: 1.25rem;
+	margin: 1rem 0;
+}
+
+.allow_section {
 	border: 1px solid #d1d5db;
 	padding: 1rem;
 	display: flex;
 	align-items: center;
-	gap: .5rem;
+	gap: 0.5rem;
 	border-radius: 0.25rem;
 }
-.page-change_section{
+.page-change_section {
 	display: flex;
 	justify-content: end;
 }
-.card-center_page{
+.card-center_page {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-.myList>li{
-margin-left: 1.5rem;
+.myList > li {
+	margin-left: 1.5rem;
 }
