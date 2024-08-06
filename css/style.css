@@ -55,6 +55,9 @@
 .my-2 {
 	margin: 1rem 0;
 }
+.mt-auto{
+	margin-top: auto;
+}
 .px-5 {
 	padding: 0 5rem;
 }
@@ -133,12 +136,21 @@ a {
 	align-items: center;
 }
 .view-full {
-	height: 100vh;
-	width: 100vw;
+	min-height: 100vh;
+	min-width: 100vw;
 }
 .grid-center {
 	display: grid;
 	place-content: center;
+	height: 100%;
+	width: 100%;
+}
+.flex-center{
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
 }
 
 .full-card {
@@ -152,10 +164,14 @@ a {
 	box-shadow: 10 10 25 gray;
 }
 .info-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	background-color: white;
 	padding: 1.25rem 2.5rem;
 	border-radius: 0.65rem;
 	width: 44rem;
+	min-height: 32rem;
 }
 
 /* Alignment */
@@ -214,4 +230,13 @@ a {
 .page-change_section{
 	display: flex;
 	justify-content: end;
+}
+.card-center_page{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.myList>li{
+margin-left: 1.5rem;
 }
