@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/TeamInventoryAssessment.css" />
+    
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-img-con">
+            <img src="../public/logo.svg" alt="">
+        </div>
+        <div class="progressBar-nain-con">
+
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 70%;">
+                    <!-- <span class="progress-text">50%</span> -->
+                </div>
+            </div>
+
+            <div class="timer-con-box">
+                <img class="img-time-logo" src="../public/Group 9.png" alt="">
+                <div class="timer-count">09:59</div>
+            </div>
+            <div class="tmr-question">Speed: 30 sec/question</div>
+
+        </div>
+
+        <div class="account-name-con">
+            <p>Hi, John</p>
+        </div>
+    </div>
+
+    <div class="screen-box">
+        <div class="card-box">
+            <div class="Inventory-main-container">
+
+                <div class="Inventory-main-left-container">
+                    <div class="Inventory-top-container">
+                        <div class="Inventory-heading-title">
+                            <div class="Inventory-heading-titleAssessment-left">
+                                <p class="hide-content">Assessment#</p>
+                                <p class="Inventory-heading-titleAssessment-num-Q">1/4</p>
+                            </div>
+                            <div class="Inventory-heading-titleAssessment-right font-700 text-md">Team Inventory Assessment</div>
+                    
+                        </div>
+                    
+                        <div class="question-container">
+                            <div class="bold">Q1</div>
+                            <div class="video-instruction-container">
+                                <b>Upload a Self-Introduction Video</b>
+                                <p>The video should be a brief self-introduction, highlighting your qualifications and interest in the role.</p>
+                                <p>Maximum video length: <b>2 minutes.</b></p>
+                                <li>Ensure you are in a quiet, well-lit environment.</li>
+                                <li>Position your webcam to clearly capture your face.</li>
+                                <li>Make sure your microphone is working properly.</li>
+
+                            </div>
+                    
+                        </div>
+
+                        
+
+
+                    </div>
+                    <div class="Inventory-bottom-container">
+                        <div class="Inventory-bottom-container-inner">
+                            <img src="../public/Group.png" alt="">
+                        </div>
+                        <div>Please remain in fullscreen mode during the test. Switching tabs or exiting fullscreen mode will be detected and reported.</div>
+                    </div>
+
+                </div>
+
+                <div class="Inventory-main-right-container">
+                    
+
+                    <div class="Inventory-answear-container ">
+                        <div class="video-main-container">
+                            
+                            <div class="video-microphone-section">
+                                <div class="microphone-container">
+                                    
+                                    <div class="video-left-section">
+                                        <div class="video-mic-logo-container">
+                                            <img src="../public/Vector.png" alt="">
+                                        </div>
+                                        <div>Microphone (4 USB PNP Audio)</div>
+                                    </div>
+
+                                    <div class="video-right-section">
+                                        <img src="../public/Vector arrow.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="video-microphone-section">
+                                <div class="microphone-container">
+                                    
+                                    <div class="video-left-section">
+                                        <div class="video-mic-logo-container">
+                                            <img src="../public/Group 52.png" alt="">
+                                        </div>
+                                        <div>HP Full HD Camera</div>
+                                    </div>
+
+                                    <div class="video-right-section">
+                                        <img src="../public/Vector arrow.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="video-container">
+                                <video id="video" autoplay></video>
+                                <div class="video-control-button">
+                                    <button id="startButton">Start Recording</button>
+                                    <button id="stopButton" disabled>Stop Recording</button>
+                                </div>
+                                
+                                <!-- <video id="recordedVideo" controls></video> -->
+                            </div>
+                            
+
+                        </div>
+                        
+                        
+
+                    </div>
+
+                    <div class="bottom-btn-main-container">
+                        <button class="next-btn-container font-700">
+                            Next Question
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    const videoElement = document.getElementById('video');
+    const recordedVideoElement = document.getElementById('recordedVideo');
+    const startButton = document.getElementById('startButton');
+    const stopButton = document.getElementById('stopButton');
+
+    let mediaRecorder;
+    let recordedChunks = [];
+
+    // Start video stream and recording
+    async function startRecording() {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+        videoElement.srcObject = stream;
+
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.ondataavailable = event => {
+            if (event.data.size > 0) {
+                recordedChunks.push(event.data);
+            }
+        };
+        mediaRecorder.onstop = () => {
+            const blob = new Blob(recordedChunks, { type: 'video/webm' });
+            recordedChunks = [];
+            recordedVideoElement.src = URL.createObjectURL(blob);
+            recordedVideoElement.controls = true;
+        };
+
+        mediaRecorder.start();
+        startButton.disabled = true;
+        stopButton.disabled = false;
+    }
+
+    // Stop recording
+    function stopRecording() {
+        mediaRecorder.stop();
+        videoElement.srcObject.getTracks().forEach(track => track.stop());
+        startButton.disabled = false;
+        stopButton.disabled = true;
+    }
+
+    startButton.addEventListener('click', startRecording);
+    stopButton.addEventListener('click', stopRecording);
+
+</script>
+
+</html>
