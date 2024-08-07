@@ -17,40 +17,56 @@
 	</head>
 	<body>
 		<main class="home-page__main">
-			<div class="info-card">
-				<div class="px-5">
-        <div class="content-center width-full">
+			<div class="home-page__content">
+				<div class="logo-section">
+						<img src="./public/logo.svg" alt="logo" class="logo-image" />
+					</div>
 
-          <img src="./public/logo.svg" alt="logo" class="centered-logo" />
-        </div>
-        
-				<p class="font-700 text-center my-2">Personal Information</p>
-				<p class="font-400 text-center">Please provide your Information to continue</p>
-				<button class="btn-blue my-2 width-full btn">Connect with Linkedin</button>
-				<form action="">
+					<p class="home-page__title">Personal Information</p>
+					<p class="home-page__sub-heading">
+						Please provide your Information to continue
+					</p>
+					<div class="home-page__blue-button-container">
+						<button class="home-page__blue-button">
+							Connect with Linkedin
+						</button>
+					</div>
+					<form action="">
+						<div class="home-page__input-section">
+							<label for="name" class="home-page__input-label">Name</label>
+							<br />
+							<input
+								type="name"
+								name="name"
+								id="name"
+								placeholder="Name"
+								class="home-page_input-field"
+							/>
+						</div>
 
-          <div class="my-2">
-            <label for="name" class="input-label">Name</label>
-            <br />
-            <input type="name" name="name" id="name" placeholder="Name" class="input-field width-full"/>
-          </div>
-
-					<div class="my-2">
-            <label for="email" class="input-label">Email</label>
-            <br />
-            <input type="email" name="email" id="password" placeholder="Email" class="input-field width-full"/>
-          </div>
-					<!-- <div class="my-2">
-            <label for="password" class="input-label">Password</label>
-            <br />
-            <input type="password" name="password" id="password" placeholder="Password" class="input-field width-full"/>
-          </div> -->
-          <div class="width-full content-center my-2">
-            <input type="submit" value="Continue" class="btn btn-green self-center">
-          </div>
-				</form>
-        <div class="text-center">Alreadey have an account? <a href="#" class="font-700">sign in  here</a></div>
-			</div>
+						<div class="home-page__input-section">
+							<label for="email" class="home-page__input-label">Email</label>
+							<br />
+							<input
+								type="email"
+								name="email"
+								id="password"
+								placeholder="Email"
+								class="home-page_input-field"
+							/>
+						</div>
+						<div class="home-page__submit-section">
+							<input
+								type="submit"
+								value="Continue"
+								class="home-page__submit-button"
+							/>
+						</div>
+					</form>
+					<div class="sign-in_text">
+						Alreadey have an account?
+						<a href="#" class="sign-in__link">sign in here</a>
+					</div>
 			</div>
 		</main>
 	</body>
