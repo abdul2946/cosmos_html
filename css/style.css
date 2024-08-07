@@ -213,9 +213,13 @@ a {
 	.info-card{
 		display: flex;
 		flex-direction: column;
-		gap: 1.0rem;
+		gap: 2rem;
 		padding: 2rem 1.2rem;
 	}
+	.info-card > hr{
+		display: none;
+	}
+	
 }
 .info-card {
 	background-color: white;
@@ -331,7 +335,6 @@ a {
 	flex-direction: column;
 	justify-content: space-between;
 }
-
 .myList > li {
 	margin-left: 1.5rem;
 }
