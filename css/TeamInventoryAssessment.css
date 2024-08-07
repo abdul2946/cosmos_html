@@ -111,7 +111,7 @@
     gap:15px;
 }
 .thankyou-body-successful-msg-container>p{
-    font-size: 12px;
+    font-size: 14px;
     text-align: left;
 }
 .thankyou-body-progressBtn-container{
@@ -244,6 +244,63 @@
     justify-content: center;
     align-items: center;
     /* background-color: gray; */
+}
+.thankyou-body-successful-msg-container-text{
+    font-size: 14px;
+}
+.thankyou-body-successful-review-report{
+    border:1px solid rgb(217, 216, 216);
+    width: 100%;
+    max-width: 700px;
+    padding: 1rem 1.25rem;
+    border-radius: 5px;
+}
+.thankyou-body-successful-review-report li{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.thankyou-body-successful-review-radio-container{
+    display: flex;
+    border:1px solid rgb(224, 222, 222);
+    border-radius: 5px;
+    width: 100%;
+
+}
+.review-radio-container-ques{
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    flex:1;
+    color:rgb(150, 147, 147);
+    border-right: 1px solid rgb(224, 222, 222);
+}
+.review-radio-container-output{
+    flex:1;
+    display: flex;
+}
+.review-radio-container-output>div{
+    border-right: 1px solid rgb(224, 222, 222);
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-radio-container-output label{
+    margin-left: 5px;
+    font-size: 14px;
+    color: grey;
+}
+
+
+.thankyou-body-textarea{
+    border-radius: 5px;
+    border: 1px solid rgb(224, 222, 222);
+    width: 100%;
+    height: 10rem;
+    padding: 1rem 0.75rem;
+}
+
+.thankyou-body-successful-main-container {
+    padding: 0.5rem 1.25rem;
 }
 
 
@@ -399,7 +456,7 @@
 }
 
 /* Hide the default radio button */
-input[type="radio"] {
+.Inventory-answear-container input[type="radio"] {
     display: none;
 }
 
@@ -683,6 +740,27 @@ input[type="radio"]:checked + .custom-radio::before {
     }
     .thankyou-body-successful-main-container,.thankyou-body-gretting-container{
         background-color: white;
+    }
+    .thankyou-body-successful-review-radio-container{
+        flex-direction: column;
+    }
+    .thankyou-body-successful-review-radio-container{
+        border:unset;
+        gap:10px;
+    }
+    .review-radio-container-output>div {
+        border: 1px solid rgb(224, 222, 222);
+        padding: 0.25rem;
+        border-radius: 5px;
+    }
+    .review-radio-container-output{
+        gap:10px;
+    }
+    .review-radio-container-ques {
+        border-right: none;
+    }
+    .review-radio-container-ques {
+        padding: 0rem;
     }
     
 
