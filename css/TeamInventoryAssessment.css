@@ -148,7 +148,7 @@
 }
 
 .thankyou-body-test-report-box{
-    border: 1px solid rgb(205, 202, 202);
+    border: 1px solid rgba(245, 245, 245, 1);
     border-radius: 5px;
     width: 100%;
     max-width: 500px;
@@ -249,7 +249,7 @@
     font-size: 14px;
 }
 .thankyou-body-successful-review-report{
-    border:1px solid rgb(217, 216, 216);
+    border:1px solid rgba(245, 245, 245, 1);
     width: 100%;
     max-width: 700px;
     padding: 1rem 1.25rem;
@@ -261,7 +261,7 @@
 }
 .thankyou-body-successful-review-radio-container{
     display: flex;
-    border:1px solid rgb(224, 222, 222);
+    border:1px solid rgba(245, 245, 245, 1);
     border-radius: 5px;
     width: 100%;
 
@@ -271,14 +271,14 @@
     font-size: 12px;
     flex:1;
     color:rgb(150, 147, 147);
-    border-right: 1px solid rgb(224, 222, 222);
+    border-right: 1px solid rgba(245, 245, 245, 1);
 }
 .review-radio-container-output{
     flex:1;
     display: flex;
 }
 .review-radio-container-output>div{
-    border-right: 1px solid rgb(224, 222, 222);
+    border-right: 1px solid rgba(245, 245, 245, 1);
     flex:1;
     display: flex;
     justify-content: center;
@@ -293,7 +293,7 @@
 
 .thankyou-body-textarea{
     border-radius: 5px;
-    border: 1px solid rgb(224, 222, 222);
+    border: 1px solid rgba(245, 245, 245, 1);
     width: 100%;
     height: 10rem;
     padding: 1rem 0.75rem;
@@ -386,7 +386,7 @@
     flex:1;
 } */
 .Inventory-main-left-container{
-    border-right: 1px solid rgb(172, 169, 169);
+    border-right: 1px solid rgba(245, 245, 245, 1);
     height: 100%;
     padding: 1.25rem 2.5rem;
     flex:2;
@@ -426,7 +426,7 @@
 }
 
 .Inventory-answear-container-box{
-    border: 1px solid rgb(185, 181, 181);
+    border: 1px solid rgba(245, 245, 245, 1);
     padding: 1.25rem 0.75rem;
     border-radius: 5px;
     width: 80%;
@@ -491,7 +491,7 @@ input[type="radio"]:checked + .custom-radio::before {
 }
 
 .Inventory-bottom-container{
-    border: 1px solid rgb(205, 201, 201);
+    border: 1px solid rgba(245, 245, 245, 1);
     border-radius: 5px;
     padding: 0.5rem 1rem;
     font-size: 10px;
@@ -515,7 +515,7 @@ input[type="radio"]:checked + .custom-radio::before {
     width: 15px;
 }
 .question-suggestion-container{
-    border: 1px solid rgb(184, 181, 181);
+    border: 1px solid rgba(245, 245, 245, 1);
     border-radius: 5px;
     padding: 1rem 1rem;
     display: flex;
@@ -528,7 +528,7 @@ input[type="radio"]:checked + .custom-radio::before {
 }
 .textarea-container{
     height: 200px;
-    border: 1.5px solid rgb(193, 191, 191);
+    border: 1.5px solid rgba(245, 245, 245, 1);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     width: 100%; 
@@ -554,7 +554,7 @@ input[type="radio"]:checked + .custom-radio::before {
   }
   .microphone-container{
     width: 23rem;
-    border: 1px solid rgb(195, 193, 193);
+    border: 1px solid rgba(245, 245, 245, 1);
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
