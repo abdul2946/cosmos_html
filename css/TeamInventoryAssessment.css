@@ -148,7 +148,7 @@
 }
 
 .thankyou-body-test-report-box{
-    border: 1px solid rgba(245, 245, 245, 1);
+    border: 1px solid rgba(209, 213, 219, 1);
     border-radius: 5px;
     width: 100%;
     max-width: 500px;
@@ -213,6 +213,19 @@
     /* float:right; */
     
 }
+.thankyou-inner-container-for-second{
+    width: 100%;
+    display: flex;
+    gap:1rem;
+    justify-content: space-between;
+    align-items: center;
+    /* float:right; */
+    
+}
+.thank-you-end-greeting{
+    font-size: 14px;
+    padding: 0rem 3rem ;
+}
 .btn-class-1{
     color:rgba(249, 115, 22, 1);
     border:1px solid rgba(249, 115, 22, 1);
@@ -249,7 +262,7 @@
     font-size: 14px;
 }
 .thankyou-body-successful-review-report{
-    border:1px solid rgba(245, 245, 245, 1);
+    border:1px solid rgba(209, 213, 219, 1);
     width: 100%;
     max-width: 700px;
     padding: 1rem 1.25rem;
@@ -261,7 +274,7 @@
 }
 .thankyou-body-successful-review-radio-container{
     display: flex;
-    border:1px solid rgba(245, 245, 245, 1);
+    border:1px solid rgba(209, 213, 219, 1);
     border-radius: 5px;
     width: 100%;
 
@@ -271,14 +284,15 @@
     font-size: 12px;
     flex:1;
     color:rgb(150, 147, 147);
-    border-right: 1px solid rgba(245, 245, 245, 1);
+    border-right: 1px solid rgba(209, 213, 219, 1);
 }
 .review-radio-container-output{
     flex:1;
     display: flex;
+    flex-wrap: wrap;
 }
 .review-radio-container-output>div{
-    border-right: 1px solid rgba(245, 245, 245, 1);
+    border-right: 1px solid rgba(209, 213, 219, 1);
     flex:1;
     display: flex;
     justify-content: center;
@@ -293,7 +307,7 @@
 
 .thankyou-body-textarea{
     border-radius: 5px;
-    border: 1px solid rgba(245, 245, 245, 1);
+    border: 1px solid rgba(209, 213, 219, 1);
     width: 100%;
     height: 10rem;
     padding: 1rem 0.75rem;
@@ -333,7 +347,7 @@
 }
 
 .progress-container {
-    width: 150px;
+    width: 20rem;
     background-color: #e0e0e0;
     border-radius: 25px;
     overflow: hidden;
@@ -360,6 +374,7 @@
     align-items: center;
     gap: 5px;
     height: 2rem;
+    width: 5rem;
 
 }
 .img-time-logo{
@@ -386,7 +401,7 @@
     flex:1;
 } */
 .Inventory-main-left-container{
-    border-right: 1px solid rgba(245, 245, 245, 1);
+    border-right: 1px solid rgba(209, 213, 219, 1);
     height: 100%;
     padding: 1.25rem 2.5rem;
     flex:2;
@@ -426,7 +441,7 @@
 }
 
 .Inventory-answear-container-box{
-    border: 1px solid rgba(245, 245, 245, 1);
+    border: 1px solid rgba(209, 213, 219, 1);
     padding: 1.25rem 0.75rem;
     border-radius: 5px;
     width: 80%;
@@ -435,7 +450,7 @@
     height: 85vh;
 }
 .bottom-btn-main-container{
-    border-top: 1px solid rgb(205, 205, 208);
+    border-top: 1px solid rgba(209, 213, 219, 1);
 }
 .next-btn-container {
     margin: 1.25rem 1rem;
@@ -483,6 +498,10 @@
     border: 2px solid #ccc;
     background-color: #fff;
 }
+.bold{
+    font-size: 22px;
+    font-weight: 500;
+}
 
 /* Change border and fill color when radio button is checked */
 input[type="radio"]:checked + .custom-radio::before {
@@ -491,7 +510,7 @@ input[type="radio"]:checked + .custom-radio::before {
 }
 
 .Inventory-bottom-container{
-    border: 1px solid rgba(245, 245, 245, 1);
+    border: 1px solid rgba(209, 213, 219, 1);
     border-radius: 5px;
     padding: 0.5rem 1rem;
     font-size: 10px;
@@ -515,7 +534,7 @@ input[type="radio"]:checked + .custom-radio::before {
     width: 15px;
 }
 .question-suggestion-container{
-    border: 1px solid rgba(245, 245, 245, 1);
+    border: 1px solid rgba(209, 213, 219, 1);
     border-radius: 5px;
     padding: 1rem 1rem;
     display: flex;
@@ -528,7 +547,7 @@ input[type="radio"]:checked + .custom-radio::before {
 }
 .textarea-container{
     height: 200px;
-    border: 1.5px solid rgba(245, 245, 245, 1);
+    border: 1.5px solid rgba(209, 213, 219, 1);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     width: 100%; 
@@ -554,7 +573,7 @@ input[type="radio"]:checked + .custom-radio::before {
   }
   .microphone-container{
     width: 23rem;
-    border: 1px solid rgba(245, 245, 245, 1);
+    border: 1px solid rgba(209, 213, 219, 1);
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -575,7 +594,7 @@ input[type="radio"]:checked + .custom-radio::before {
   }
 
   .video-mic-logo-container>img{
-    height: 10px;
+    height: auto;
     width: 10px;
   }
 
@@ -612,156 +631,22 @@ input[type="radio"]:checked + .custom-radio::before {
     gap:10px;
   }
   
-  button:disabled {
+  /* button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+  } */
+
+  .general-text{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(31, 41, 55, 1);
+  }
+
+  .general-text-bold{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgba(31, 41, 55, 1);
   }
   
-
-
-
-
-@media only screen and (max-width: 746px) {
-    .screen-box{
-        /* align-items:center; */
-
-    }
-    .Inventory-main-container{
-        flex-direction: column;
-    }
-    .account-name-con,.tmr-question,.Inventory-bottom-container{
-        display: none;
-    }
-    .nav-container{
-        justify-content: unset;
-        gap: 10px;
-    }
-    .progressBar-nain-con{
-        width: 100%;
-        justify-content: space-between;
-    }
-    .Inventory-main-left-container{
-        border-right: none;
-        padding: 0rem 1.5rem;
-    }
-    .card-box {
-        width: 100%;
-        /* height: fit-content; */
-        /* background-color: blue; */
-    }
-    
-    .Inventory-answear-container {
-        padding: 0rem 1.5rem;
-    }
-    .Inventory-answear-container-box {
-        width: 100%;
-    }
-    .Inventory-heading-title{
-        flex-direction: row;
-        background-color: white;
-        padding: 1rem 1.25rem;
-        border-radius: 5px;
-    }
-    .question-container{
-        background-color: white;
-        padding: 1rem 1.25rem;
-        border-radius: 5px;
-    }
-    .Inventory-heading-titleAssessment-left{
-        order:2
-    }
-    .hide-content{
-        display: none;
-    }
-    .Inventory-heading-titleAssessment-num-Q{
-        font-weight: 500;
-    }
-    .card-box {
-        background-color: unset;
-    }
-    .Inventory-answear-container{
-        margin: 0 0;
-    }
-    .Inventory-answear-text{
-        font-weight: 700;
-        margin-top: 1rem;
-    }
-
-    .Inventory-main-container {
-        gap:0;
-    }
-    .Inventory-main-container>div {
-        /* flex: unset; */
-        margin-top: 1rem;
-    }
-    .Inventory-answear-container >div,.Inventory-answear-container >p{
-        background-color: white;
-        padding: 1rem 1.25rem;
-        border-radius: 5px;
-    }
-    .bold{
-        font-weight: 600;
-    }
-    .bottom-btn-main-container {
-        position: fixed;
-        bottom: 0; /* Align to the bottom of the viewport */
-        left: 0;   /* Align to the left of the viewport */
-        right: 0;  /* Stretch to the right of the viewport */
-        height: 60px; /* Optional: Set the height of the container */
-        background-color: #fff; /* Optional: Background color for visibility */
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow for visual effect */
-        display: flex;
-        justify-content: end;
-        align-items: center;
-    }
-    .card-box-secound{
-        width: 95vw;
-    }
-    .thankyou-body-progressBtn-container{
-        flex-direction: column;
-    }
-    .thankyou-inner-container{
-        width: 100%;
-        justify-content: space-between;
-    }
-    .thankyou-container-bottom {
-        height: 4rem !important;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .thankyou-body-successful-main-container{
-        padding: 0.5rem 1.25rem;
-    }
-    .thankyou-container-top{
-        background-color: unset !important;
-    }
-    .thankyou-body-successful-main-container,.thankyou-body-gretting-container{
-        background-color: white;
-    }
-    .thankyou-body-successful-review-radio-container{
-        flex-direction: column;
-    }
-    .thankyou-body-successful-review-radio-container{
-        border:unset;
-        gap:10px;
-    }
-    .review-radio-container-output>div {
-        border: 1px solid rgb(224, 222, 222);
-        padding: 0.25rem;
-        border-radius: 5px;
-    }
-    .review-radio-container-output{
-        gap:10px;
-    }
-    .review-radio-container-ques {
-        border-right: none;
-    }
-    .review-radio-container-ques {
-        padding: 0rem;
-    }
-    
-
-}
