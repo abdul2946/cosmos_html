@@ -151,6 +151,9 @@
     .thank-you-end-greeting{
         display: none;
     }
+    .thankyou-container-top{
+        margin-top: 10px;
+    }
     
 
 }
