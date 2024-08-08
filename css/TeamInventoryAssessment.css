@@ -197,7 +197,8 @@
 .thankyou-body-test-report-bottom-text{
     color:rgba(31, 41, 55, 1);
     font-size: 14px;
-    line-height: 34px;
+    line-height: 30px;
+    text-align: justify;
 }
 .thankyou-container-bottom{
     padding: 0.75rem 1rem;
@@ -234,6 +235,7 @@
     font-weight: 600;
     font-size: 14px;
     border-radius: 3px;
+    cursor: pointer;
 }
 .btn-class-2{
     background-color: rgba(15, 118, 110, 1);
@@ -243,6 +245,8 @@
     font-size: 14px;
     border-radius: 3px;
     color: white;
+    cursor: pointer;
+    text-decoration: none;
 }
 .thankyou-body-gretting{
     font-size: 1.25rem;
@@ -451,6 +455,9 @@
     color:white;
     border-radius: 5px;
     border:none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
     
 }
 .Inventory-heading-titleAssessment-left{
@@ -613,11 +620,12 @@ input[type="radio"]:checked + .custom-radio::before {
   }
   
   .video-control-button>button {
-    padding: 10px 20px;
+    padding: 5px 10px;
     border: 2px solid rgba(15, 118, 110, 1);
     border-radius: 5px;
     color: rgba(15, 118, 110, 1);
     cursor: pointer;
+    font-size: 12px;
   }
   .video-control-button{
     display: flex;
