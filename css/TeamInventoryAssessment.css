@@ -70,6 +70,7 @@
     justify-content: space-between;
     flex-direction: column;
     /* gap:2rem; */
+    overflow-y: auto;
 }
 .card-box-secound>div{
     background-color: white;
@@ -85,7 +86,7 @@
 .thankyou-container-top{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     /* padding: 1rem 1.25rem; */
 }
 .thankyou-body-container{
@@ -190,7 +191,7 @@
     font-weight: 700;
 }
 .thankyou-body-test-total-question-class{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
 .thankyou-body-test-report-bottom-text{

@@ -5,6 +5,7 @@
     }
     .Inventory-main-container{
         flex-direction: column;
+        height: max-content
     }
     .account-name-con,.tmr-question,.Inventory-bottom-container{
         display: none;
@@ -55,6 +56,7 @@
     }
     .card-box {
         background-color: unset;
+        overflow-y: auto;
     }
     .Inventory-answear-container{
         margin: 0 0;
