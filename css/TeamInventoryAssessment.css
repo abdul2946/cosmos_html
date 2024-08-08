@@ -60,6 +60,264 @@
     background-color: white;
     border-radius: 5px;
 }
+
+.card-box-secound{
+    width: 70vw;
+    height: 80vh;
+    /* background-color: white; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* gap:2rem; */
+}
+.card-box-secound>div{
+    background-color: white;
+    border-radius: 5px;
+}
+.card-box-secound>div:nth-child(1){
+
+    height: 70vh;
+}
+.card-box-secound>div:nth-child(2){
+    height: 9vh;
+}
+.thankyou-container-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 1rem 1.25rem; */
+}
+.thankyou-body-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    width: 100%;
+    height: max-content;
+}
+.thankyou-body-successful-main-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    width: 100%;
+    height: max-content;
+}
+.thankyou-body-successful-msg-container{
+    display: flex;
+    gap:15px;
+}
+.thankyou-body-successful-msg-container>p{
+    font-size: 14px;
+    text-align: left;
+}
+.thankyou-body-progressBtn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+.thankyou-progress-items{
+    height: 2rem;
+    /* width: 10rem; */
+    background-color: rgba(224, 242, 254, 1);
+    border-radius: 5px;
+    padding: 0.25rem 1rem;
+    align-items: center;
+    display: flex;
+    gap:5px;
+}
+.thankyou-progress-items>img{
+    height: 15px;
+}
+.thankyou-progress-items>p{
+    color: rgba(3, 105, 161, 1);
+    font-size: 12px;
+}
+.thankyou-progress-items>h4{
+    color: rgba(3, 105, 161, 1);
+    font-size: 12px;
+    font-weight: 500;
+}
+.thankyou-body-time-text{
+    font-size: 15px;
+    color: gray;
+}
+
+.thankyou-body-test-report-box{
+    border: 1px solid rgba(209, 213, 219, 1);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+.thankyou-body-test-report-box>h2{
+    font-size: 1.2rem;
+}
+
+.thankyou-body-test-report-ineer-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.thankyou-progress-items2{
+    height: 2rem;
+    /* width: max-content; */
+    background-color: rgba(224, 242, 254, 1);
+    border-radius: 5px;
+    padding: 0.25rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    gap:5px;
+}
+.thankyou-progress-items2>h4{
+    color: rgba(3, 105, 161, 1);
+    font-size: 12px;
+    font-weight: 700;
+}
+.thankyou-body-test-total-question-class{
+    font-size: 18px;
+    font-weight: 700;
+}
+.thankyou-body-test-report-bottom-text{
+    color:rgba(31, 41, 55, 1);
+    font-size: 14px;
+    line-height: 34px;
+}
+.thankyou-container-bottom{
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.thankyou-inner-container{
+    width: 100%;
+    display: flex;
+    gap:1rem;
+    justify-content: end;
+    align-items: center;
+    /* float:right; */
+    
+}
+.thankyou-inner-container-for-second{
+    width: 100%;
+    display: flex;
+    gap:1rem;
+    justify-content: space-between;
+    align-items: center;
+    /* float:right; */
+    
+}
+.thank-you-end-greeting{
+    font-size: 14px;
+    padding: 0rem 3rem ;
+}
+.btn-class-1{
+    color:rgba(249, 115, 22, 1);
+    border:1px solid rgba(249, 115, 22, 1);
+    padding: 0.35rem 0.75rem;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.btn-class-2{
+    background-color: rgba(15, 118, 110, 1);
+    border:1px solid rgba(15, 118, 110, 1);
+    padding: 0.35rem 0.75rem;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+    color: white;
+}
+.thankyou-body-gretting{
+    font-size: 1.25rem;
+}
+.thankyou-body-successful-msg-container-img{
+    height: 24px;
+    width: 24px;
+}
+.thankyou-body-gretting-container{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
+}
+.thankyou-body-successful-msg-container-text{
+    font-size: 14px;
+}
+.thankyou-body-successful-review-report{
+    border:1px solid rgba(209, 213, 219, 1);
+    width: 100%;
+    max-width: 700px;
+    padding: 1rem 1.25rem;
+    border-radius: 5px;
+}
+.thankyou-body-successful-review-report li{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.thankyou-body-successful-review-radio-container{
+    display: flex;
+    border:1px solid rgba(209, 213, 219, 1);
+    border-radius: 5px;
+    width: 100%;
+
+}
+.review-radio-container-ques{
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    flex:1;
+    color:rgb(150, 147, 147);
+    border-right: 1px solid rgba(209, 213, 219, 1);
+}
+.review-radio-container-output{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.review-radio-container-output>div{
+    border-right: 1px solid rgba(209, 213, 219, 1);
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-radio-container-output label{
+    margin-left: 5px;
+    font-size: 14px;
+    color: grey;
+}
+
+
+.thankyou-body-textarea{
+    border-radius: 5px;
+    border: 1px solid rgba(209, 213, 219, 1);
+    width: 100%;
+    height: 10rem;
+    padding: 1rem 0.75rem;
+}
+
+.thankyou-body-successful-main-container {
+    padding: 0.5rem 1.25rem;
+}
+
+
 .nav-container{
     height: 60px;
     width: 100vw;
@@ -89,7 +347,7 @@
 }
 
 .progress-container {
-    width: 150px;
+    width: 20rem;
     background-color: #e0e0e0;
     border-radius: 25px;
     overflow: hidden;
@@ -116,6 +374,7 @@
     align-items: center;
     gap: 5px;
     height: 2rem;
+    width: 5rem;
 
 }
 .img-time-logo{
@@ -135,14 +394,14 @@
 .Inventory-main-container{
     display: flex;
     gap:2px;
-    height: 100%;
+    height: 80vh;
     overflow-y: auto;
 }
 /* .Inventory-main-container>div{
     flex:1;
 } */
 .Inventory-main-left-container{
-    border-right: 1px solid rgb(172, 169, 169);
+    border-right: 1px solid rgba(209, 213, 219, 1);
     height: 100%;
     padding: 1.25rem 2.5rem;
     flex:2;
@@ -182,7 +441,7 @@
 }
 
 .Inventory-answear-container-box{
-    border: 1px solid rgb(185, 181, 181);
+    border: 1px solid rgba(209, 213, 219, 1);
     padding: 1.25rem 0.75rem;
     border-radius: 5px;
     width: 80%;
@@ -191,7 +450,7 @@
     height: 85vh;
 }
 .bottom-btn-main-container{
-    border-top: 1px solid rgb(205, 205, 208);
+    border-top: 1px solid rgba(209, 213, 219, 1);
 }
 .next-btn-container {
     margin: 1.25rem 1rem;
@@ -212,7 +471,7 @@
 }
 
 /* Hide the default radio button */
-input[type="radio"] {
+.Inventory-answear-container input[type="radio"] {
     display: none;
 }
 
@@ -239,6 +498,10 @@ input[type="radio"] {
     border: 2px solid #ccc;
     background-color: #fff;
 }
+.bold{
+    font-size: 22px;
+    font-weight: 500;
+}
 
 /* Change border and fill color when radio button is checked */
 input[type="radio"]:checked + .custom-radio::before {
@@ -247,7 +510,7 @@ input[type="radio"]:checked + .custom-radio::before {
 }
 
 .Inventory-bottom-container{
-    border: 1px solid rgb(205, 201, 201);
+    border: 1px solid rgba(209, 213, 219, 1);
     border-radius: 5px;
     padding: 0.5rem 1rem;
     font-size: 10px;
@@ -271,7 +534,7 @@ input[type="radio"]:checked + .custom-radio::before {
     width: 15px;
 }
 .question-suggestion-container{
-    border: 1px solid rgb(184, 181, 181);
+    border: 1px solid rgba(209, 213, 219, 1);
     border-radius: 5px;
     padding: 1rem 1rem;
     display: flex;
@@ -284,7 +547,7 @@ input[type="radio"]:checked + .custom-radio::before {
 }
 .textarea-container{
     height: 200px;
-    border: 1.5px solid rgb(193, 191, 191);
+    border: 1.5px solid rgba(209, 213, 219, 1);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     width: 100%; 
@@ -310,7 +573,7 @@ input[type="radio"]:checked + .custom-radio::before {
   }
   .microphone-container{
     width: 23rem;
-    border: 1px solid rgb(195, 193, 193);
+    border: 1px solid rgba(209, 213, 219, 1);
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -331,7 +594,7 @@ input[type="radio"]:checked + .custom-radio::before {
   }
 
   .video-mic-logo-container>img{
-    height: 10px;
+    height: auto;
     width: 10px;
   }
 
@@ -368,108 +631,22 @@ input[type="radio"]:checked + .custom-radio::before {
     gap:10px;
   }
   
-  button:disabled {
+  /* button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+  } */
+
+  .general-text{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(31, 41, 55, 1);
+  }
+
+  .general-text-bold{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgba(31, 41, 55, 1);
   }
   
-
-
-
-
-@media only screen and (max-width: 746px) {
-    .screen-box{
-        align-items:center;
-
-    }
-    .Inventory-main-container{
-        flex-direction: column;
-    }
-    .account-name-con,.tmr-question,.Inventory-bottom-container{
-        display: none;
-    }
-    .nav-container{
-        justify-content: unset;
-        gap: 10px;
-    }
-    .progressBar-nain-con{
-        width: 100%;
-        justify-content: space-between;
-    }
-    .Inventory-main-left-container{
-        border-right: none;
-        padding: 0rem 1.5rem;
-    }
-    .card-box {
-        width: 100%;
-        height: fit-content;
-        /* background-color: blue; */
-    }
-    
-    .Inventory-answear-container {
-        padding: 0rem 1.5rem;
-    }
-    .Inventory-answear-container-box {
-        width: 100%;
-    }
-    .Inventory-heading-title{
-        flex-direction: row;
-        background-color: white;
-        padding: 1rem 1.25rem;
-        border-radius: 5px;
-    }
-    .question-container{
-        background-color: white;
-        padding: 1rem 1.25rem;
-        border-radius: 5px;
-    }
-    .Inventory-heading-titleAssessment-left{
-        order:2
-    }
-    .hide-content{
-        display: none;
-    }
-    .Inventory-heading-titleAssessment-num-Q{
-        font-weight: 500;
-    }
-    .card-box {
-        background-color: unset;
-    }
-    .Inventory-answear-container{
-        margin: 0 0;
-    }
-    .Inventory-answear-text{
-        font-weight: 700;
-        margin-top: 1rem;
-    }
-
-    .Inventory-main-container {
-        gap:0;
-    }
-    .Inventory-main-container>div {
-        flex: unset;
-        margin-top: 1rem;
-    }
-    .Inventory-answear-container >div,p{
-        background-color: white;
-        padding: 1rem 1.25rem;
-        border-radius: 5px;
-    }
-    .bold{
-        font-weight: 600;
-    }
-    .bottom-btn-main-container {
-        position: fixed;
-        bottom: 0; /* Align to the bottom of the viewport */
-        left: 0;   /* Align to the left of the viewport */
-        right: 0;  /* Stretch to the right of the viewport */
-        height: 60px; /* Optional: Set the height of the container */
-        background-color: #fff; /* Optional: Background color for visibility */
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow for visual effect */
-        display: flex;
-        justify-content: end;
-        align-items: center;
-    }
-    
-
-}

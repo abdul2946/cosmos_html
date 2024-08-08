@@ -5,27 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/TeamInventoryAssessment.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
     
 </head>
 <body>
     <div class="nav-container">
         <div class="nav-img-con">
             <img src="../public/logo.svg" alt="">
-        </div>
-        <div class="progressBar-nain-con">
-
-            <div class="progress-container">
-                <div class="progress-bar" style="width: 70%;">
-                    <!-- <span class="progress-text">50%</span> -->
-                </div>
-            </div>
-
-            <div class="timer-con-box">
-                <img class="img-time-logo" src="../public/Group 9.png" alt="">
-                <div class="timer-count">09:59</div>
-            </div>
-            <div class="tmr-question">Speed: 30 sec/question</div>
-
         </div>
 
         <div class="account-name-con">
@@ -34,57 +20,72 @@
     </div>
 
     <div class="screen-box">
-        <div class="card-box">
-            <div class="Inventory-main-container">
+        <div class="card-box-secound">
+            
+            <div class="thankyou-container-top">
+
                 
+
+                <div class="thankyou-body-container">
+                    <div class="thankyou-body-gretting-container">
+                        <div class="thankyou-body-gretting">Congratulations!</div>
+                    </div>
+
+                    <div class="thankyou-body-successful-main-container">
+                    
+                        <div class="thankyou-body-successful-msg-container">
+                            <img class="thankyou-body-successful-msg-container-img" src="../public/icons-green-thik.png" alt="img">
+                            <p>You have successfully completed the Team Inventory Assessment.</p>
+                        </div>
+                    
+                        <div class="thankyou-body-progressBtn-container">
+                            <div class="thankyou-progress-items">
+                                <img src="../public/Time-elapsed.png" alt="">
+                                <p>Time elapsed</p>
+                                <h4>02:59</h4>
+                            </div>
+                    
+                            <div class="thankyou-progress-items">
+                                <img src="../public/Assessment-Completed.png" alt="img">
+                                <p class="">Assessment Completed</p>
+                                <h4>1/4</h4>
+                            </div>
+                        </div>
+                        <div class="thankyou-body-time-text">You have saved ~7 minutes</div>
+                        <div class="thankyou-body-time-text">Next Test</div>
+                    
+                        <div class="thankyou-body-test-report-box">
+                            <h2>Communication Skills Test</h2>
+                            <div class="thankyou-body-test-report-ineer-container">
+                                <p class="thankyou-body-test-total-question-class">20 Questions</p>
+                                <p class="thankyou-body-time-text">Total Duration</p>
+                    
+                                <div class="thankyou-progress-items2">
+                                    <h4>10min</h4>
+                                </div>
+                            </div>
+                            <p class="thankyou-body-test-report-bottom-text">This test is designed to evaluate your skills and knowledge in
+                                Team Inventory. It will consist of various types of questions that are intended to measure your proficiency
+                                and understanding in this area.</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
+            <div class="thankyou-container-bottom">
+                <div class="thankyou-inner-container">
+                    <div class="btn-class-1">Take a Break</div>
+                    <div class="btn-class-2">Start Next Test</div>
+
+
+                </div>
+
+            </div>
+            
         </div>
     </div>
 
 </body>
-<script>
-    const videoElement = document.getElementById('video');
-    const recordedVideoElement = document.getElementById('recordedVideo');
-    const startButton = document.getElementById('startButton');
-    const stopButton = document.getElementById('stopButton');
-
-    let mediaRecorder;
-    let recordedChunks = [];
-
-    // Start video stream and recording
-    async function startRecording() {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
-        videoElement.srcObject = stream;
-
-        mediaRecorder = new MediaRecorder(stream);
-        mediaRecorder.ondataavailable = event => {
-            if (event.data.size > 0) {
-                recordedChunks.push(event.data);
-            }
-        };
-        mediaRecorder.onstop = () => {
-            const blob = new Blob(recordedChunks, { type: 'video/webm' });
-            recordedChunks = [];
-            recordedVideoElement.src = URL.createObjectURL(blob);
-            recordedVideoElement.controls = true;
-        };
-
-        mediaRecorder.start();
-        startButton.disabled = true;
-        stopButton.disabled = false;
-    }
-
-    // Stop recording
-    function stopRecording() {
-        mediaRecorder.stop();
-        videoElement.srcObject.getTracks().forEach(track => track.stop());
-        startButton.disabled = false;
-        stopButton.disabled = true;
-    }
-
-    startButton.addEventListener('click', startRecording);
-    stopButton.addEventListener('click', stopRecording);
-
-</script>
 
 </html>
