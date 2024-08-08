@@ -134,7 +134,7 @@
 }
 
 /* Key Features */
-.keyfeatures_badge{
+.badge{
   text-align: center;
   display: flex;
   align-items: center;
@@ -188,4 +188,57 @@
 	font-size: 1.25rem;
 	line-height: 2.5rem;
 	font-weight: 400;
+}
+
+/* Guide Section */
+.guide{
+	margin: 8rem 0;
+}
+.guide_description{
+	margin: 3rem 0;
+}
+.guide_title{
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 4.1rem;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+.guide_details{
+	text-align: center;
+	font-size: 1.25rem;
+	line-height: 2.5rem;
+}
+.guide_steps-section{
+	background-color: #1F2937;
+	color: white;
+	border-radius: 0.25rem;
+}
+
+.guide_step{
+	padding: 2.5rem;
+}
+.guide_step-title{
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 2rem;
+	text-align: center;
+}
+.guide_step-image{
+	display: flex;
+	justify-content: center;
+	margin: 4rem 0;
+}
+.guide_step-details{
+	width:min(56.25rem,100%);
+	margin: 0 auto;
+}
+.guide_step-point{
+	font-size: 1.125rem;
+	line-height: 2.5rem;
+	font-weight: 400;
+}
+.guide_step-point span{
+	font-weight: 700;
+	font-size: 1.125rem;
 }
