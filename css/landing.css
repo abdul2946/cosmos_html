@@ -17,6 +17,94 @@
 		width: min(81.25rem, 90%);
 		margin: 0 auto;
 	}
+	.hero {
+		display: flex;
+		justify-content: space-between;
+		margin: 8rem 0;
+		align-items: center;
+		gap: 6rem;
+	}
+	.hero_title {
+		line-height: 4rem;
+		font-size: 3rem;
+	}
+	.capabilities_features {
+		grid-template-columns: 1fr 1fr;
+	}
+	.capabilities_title {
+		font-size: 3rem;
+		line-height: 4rem;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+	}
+	.faq_question {
+		line-height: 1rem;
+	}
+	.faq_title {
+		font-size: 3rem;
+		line-height: 4rem;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media (max-width: 639px) {
+	.main {
+		padding: 0 0.5rem;
+	}
+	.nav_link {
+		display: none;
+	}
+	.navbar_user span {
+		display: none;
+	}
+	.goto_dashboard {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.hero {
+		margin: 2.5rem 0;
+	}
+	.hero_title {
+		text-align: center;
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+	.hero_details {
+		text-align: center;
+	}
+	.hero_description {
+		text-align: center;
+	}
+	.capabilities_title {
+		text-align: center;
+		font-size: 2rem;
+		line-height: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	.faq {
+		padding: 0 1rem;
+	}
+	.faq_question {
+		line-height: 2rem;
+	}
+	.faq_title {
+		text-align: center;
+		font-size: 2rem;
+		line-height: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	.faq_details{
+		text-align: center;
+	}
+	.hero_image{
+		width: 90%;
+		margin: 1rem auto;
+	}
+	.hero_image-section{
+		display: flex;
+		justify-content: center;
+	}
 }
 
 /* Navbar */
@@ -101,17 +189,8 @@
 }
 
 /* Hero Section */
-.hero {
-	display: flex;
-	justify-content: space-between;
-	margin: 8rem 0;
-	align-items: center;
-	gap: 6rem;
-}
 .hero_title {
-	font-size: 3rem;
 	font-weight: 600;
-	line-height: 4rem;
 }
 .hero_details {
 	margin: 2rem 0;
@@ -154,12 +233,7 @@
 	margin: 0 auto;
 	padding: 0.25rem;
 }
-.capabilities_title {
-	font-size: 3rem;
-	line-height: 4rem;
-	font-weight: 600;
-	margin-bottom: 1.5rem;
-}
+
 .capabilities_details {
 	font-size: 1.25rem;
 	line-height: 2.5rem;
@@ -167,7 +241,7 @@
 .capabilities_features {
 	margin: 5rem 0;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+
 	gap: 1.5rem 2rem;
 }
 .capabilities_feature-card {
@@ -250,18 +324,13 @@
 .faq_description {
 	margin: 3rem 0;
 }
-.faq_title {
-	font-size: 3rem;
-	line-height: 4rem;
-	font-weight: 600;
-	margin-bottom: 1.5rem;
-}
+
 .faq_details {
 	font-size: 1.25rem;
 	line-height: 2.5rem;
 	font-weight: 400;
 }
-.faq_question_sections{
+.faq_question_sections {
 	margin: 1.5rem 0;
 }
 .faq_question-individual {
@@ -270,7 +339,6 @@
 .faq_question {
 	font-size: 1.125rem;
 	font-weight: 600;
-	line-height: 1rem;
 }
 .faq_question-highlight {
 	padding: 0.5rem;
