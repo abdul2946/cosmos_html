@@ -31,7 +31,7 @@
 		padding: 1.5rem 0.75rem;
 		width: 43.75rem;
 		height: min(37.75rem,100%);
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 	.sign_in__line {
 		display: none;
@@ -155,7 +155,7 @@
 		margin-top: 0rem;
 		height: 100vh;
 		width: 100vw;
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 	.intro-page__content {
 		background-color: white;
@@ -254,7 +254,7 @@
 		border-radius: 0.25rem;
 	}
 	.preparation-page__content{
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 	.preparation-page__content-main {
 		display: flex;
@@ -474,7 +474,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 	.ensuring__rule {
 		display: none;
@@ -602,7 +602,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 	.start-assessment__line {
 		display: none;
