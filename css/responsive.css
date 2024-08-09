@@ -5,13 +5,18 @@
     }
     .Inventory-main-container{
         flex-direction: column;
-        height: max-content
+        /* height: max-content; */
+        height: 100%;
     }
     .account-name-con,.tmr-question,.Inventory-bottom-container{
         display: none;
     }
     .nav-container{
         justify-content: unset;
+        gap: 10px;
+    }
+    .nav-container-second{
+        justify-content: center;
         gap: 10px;
     }
     .progressBar-nain-con{
@@ -24,6 +29,8 @@
     }
     .card-box {
         width: 100%;
+        height: calc(100vh - 156px);
+   
         /* height: fit-content; */
         /* background-color: blue; */
     }

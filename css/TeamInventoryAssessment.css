@@ -67,10 +67,11 @@
     /* background-color: white; */
     border-radius: 5px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: column;
-    /* gap:2rem; */
+    gap:0.5rem;
     overflow-y: auto;
+    padding: 1rem 0;
 }
 .card-box-secound>div{
     background-color: white;
@@ -78,7 +79,7 @@
 }
 .card-box-secound>div:nth-child(1){
 
-    height: 70vh;
+    /* height: 70vh; */
 }
 .card-box-secound>div:nth-child(2){
     height: 9vh;
@@ -97,6 +98,7 @@
     gap:10px;
     width: 100%;
     height: max-content;
+    /* overflow-y: scroll; */
 }
 .thankyou-body-successful-main-container{
     display:flex;
@@ -106,6 +108,7 @@
     gap:10px;
     width: 100%;
     height: max-content;
+    padding: 0.5rem 1.25rem;
 }
 .thankyou-body-successful-msg-container{
     display: flex;
@@ -318,12 +321,21 @@
     padding: 1rem 0.75rem;
 }
 
-.thankyou-body-successful-main-container {
+/* .thankyou-body-successful-main-container {
     padding: 0.5rem 1.25rem;
-}
+} */
 
 
 .nav-container{
+    height: 60px;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 2rem;
+}
+.nav-container-second{
     height: 60px;
     width: 100vw;
     background-color: white;
