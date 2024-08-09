@@ -11,7 +11,7 @@
         display: none;
     }
     .nav-container{
-        justify-content: unset;
+        justify-content: center;
         gap: 10px;
     }
     .progressBar-nain-con{

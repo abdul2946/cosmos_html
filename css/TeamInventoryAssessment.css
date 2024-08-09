@@ -6,6 +6,16 @@
 	box-sizing: border-box;
 	font-family: "Open Sans", sans-serif;
 }
+@media (min-width:640px) {
+    *{
+        font-size: 16px;
+    }
+}
+@media (max-width:639px) {
+    *{
+        font-size: 12px;
+    }
+}
 /* Font weight */
 .font-100 {
 	font-weight: 100;
@@ -205,7 +215,6 @@
     text-align: justify;
 }
 .thankyou-container-bottom{
-    padding: 0.75rem 1rem;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -216,7 +225,7 @@
     gap:1rem;
     justify-content: end;
     align-items: center;
-    /* float:right; */
+    padding: 1rem 1.5rem;
     
 }
 .thankyou-inner-container-for-second{
@@ -225,12 +234,11 @@
     gap:1rem;
     justify-content: space-between;
     align-items: center;
-    /* float:right; */
-    
+    padding: 0.75rem 1rem;
+    min-height: 6rem;
 }
 .thank-you-end-greeting{
     font-size: 14px;
-    padding: 0rem 3rem ;
 }
 
 
