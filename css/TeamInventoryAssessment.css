@@ -48,7 +48,7 @@
 }
 .screen-box{
     height: 92vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,7 +348,7 @@
 
 
 .nav-container{
-    width: 100vw;
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: space-between;
