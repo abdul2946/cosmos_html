@@ -47,7 +47,7 @@
 	font-size: 18px;
 }
 .screen-box{
-    height: 100vh;
+    height: 92vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -228,26 +228,40 @@
     font-size: 14px;
     padding: 0rem 3rem ;
 }
+
+
+/* Rebuild Buttons as per figma */
 .btn-class-1{
-    color:rgba(249, 115, 22, 1);
-    border:1px solid rgba(249, 115, 22, 1);
-    padding: 0.35rem 0.75rem;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 3px;
+    color:#F97316;
+    border: .1px solid #F97316;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 0.25rem;
     cursor: pointer;
+    outline: none;
 }
+.btn-class-1:focus{
+    outline:none
+}
+
+
 .btn-class-2{
-    background-color: rgba(15, 118, 110, 1);
-    border:1px solid rgba(15, 118, 110, 1);
-    padding: 0.35rem 0.75rem;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 3px;
+    background-color: #0F766E;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 0.25rem;
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
+.btn-class-2:focus{
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
 .thankyou-body-gretting{
     font-size: 1.25rem;
 }
@@ -324,13 +338,12 @@
 
 
 .nav-container{
-    height: 60px;
+    height: 8vh;
     width: 100vw;
     background-color: white;
-    position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 0.25rem 2rem;
+    padding: 0.75rem 2rem;
 }
 .nav-img-con{
     padding: 0.25rem 0rem;
