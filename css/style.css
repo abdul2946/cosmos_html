@@ -170,9 +170,10 @@
 	.intro-page__content {
 		padding: 1.5rem;
 	}
-	.intro-page__button-section {
+	.intro-page__button {
 		position: fixed;
 		bottom: 0rem;
+		margin: 1rem 0;
 		padding-top: 1.2rem;
 		left: 50%;
 		transform: translateX(-50%);
@@ -452,6 +453,9 @@
 		flex-direction: column;
 		justify-content: space-between;
 	}
+	.ensuring__rule{
+		display: none;
+	}
 }
 
 @media (max-width: 639px) {
@@ -462,9 +466,9 @@
 	.ensuring__navbar-user {
 		display: none;
 	}
-	.ensuring__button-section {
+	.ensuring__button {
 		position: fixed;
-		bottom: 1rem;
+		bottom: 0rem;
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -523,6 +527,7 @@
 	padding: 0.75rem 1.5rem;
 	font-weight: 700;
 	border-radius: 0.25rem;
+	margin: 1rem 0;
 	outline: none;
 	border: none;
 	cursor: pointer;
@@ -566,6 +571,9 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+	.start-assessment__line{
+		display: none;
 	}
 }
 
