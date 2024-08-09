@@ -421,24 +421,23 @@
 	.ensuring__main {
 		background-color: #f5f5f5;
 		padding-bottom: 1.5rem;
-		display: grid;
-		place-content: center;
 		min-height: 100vh;
 		min-width: 100vw;
 	}
 	.ensuring__navbar {
-		position: fixed;
 		width: 100%;
-		top: 0;
-		left: 0;
 		justify-content: space-between;
 		padding: 0.75rem 2rem;
+	}
+	.ensuring__content-wrapper{
+		height: 90vh;
+		place-content: center;
 	}
 	.ensuring__content {
 		background-color: white;
 		border-radius: 0.25rem;
 		width: min(43.75rem, 90%);
-		height: 34.875rem;
+		height: min(34.875rem,90%);
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
@@ -538,24 +537,23 @@
 	.start-assessment__main {
 		background-color: #f5f5f5;
 		padding-bottom: 1.5rem;
-		display: grid;
-		place-content: center;
 		min-height: 100vh;
 		min-width: 100vw;
 	}
 	.start-assessment__navbar {
-		position: fixed;
 		width: 100%;
-		top: 0;
-		left: 0;
 		justify-content: space-between;
 		padding: 0.75rem 2rem;
+	}
+	.start-assessment__content-wrapper{
+		height: 90vh;
+		place-content: center;
 	}
 	.start-assessment__content {
 		background-color: white;
 		border-radius: 0.25rem;
 		width: min(43.75rem, 90%);
-		height: 34.875rem;
+		height: min(34.875rem,90%);
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
