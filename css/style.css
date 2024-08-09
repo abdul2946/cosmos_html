@@ -437,8 +437,8 @@
 		background-color: white;
 		border-radius: 0.25rem;
 		width: min(43.75rem, 90%);
-		height: min(34.875rem,90%);
-		margin: 0 auto;
+		height: min(34.875rem,100%);
+		margin: auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
