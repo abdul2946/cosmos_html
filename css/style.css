@@ -32,6 +32,9 @@
 		width: 43.75rem;
 		height: 37.75rem;
 	}
+	.sign_in__line {
+		display: none;
+	}
 }
 @media (max-width: 639px) {
 	.home-page__main {
@@ -44,13 +47,20 @@
 	}
 	.home-page__submit-section {
 		position: fixed;
-		bottom: 0.5rem;
+		bottom: 0rem;
 		left: 50%;
 		transform: translateX(-50%);
 	}
 	.home-page__submit-button {
 		margin: 0;
-		margin-bottom: 0.5rem;
+	}
+	.sign_in__line {
+		position: fixed;
+		bottom: 5rem;
+		width: 100%;
+		left: 0;
+		border: none;
+		border-top: 0.125rem solid #d1d5db;
 	}
 }
 
@@ -152,14 +162,6 @@
 		border-radius: 0.25rem;
 		padding: 1.5rem 0.75rem;
 	}
-	.intro-page__contact-section::before {
-		content: "";
-		position: absolute;
-		width: 100%;
-		top: 0.5rem;
-		left: 0;
-		border: 1px solid #d1d5db;
-	}
 	.preparation-page__permission-section {
 		margin-top: auto;
 	}
@@ -170,13 +172,16 @@
 	}
 	.intro-page__button-section {
 		position: fixed;
-		bottom: 0.5rem;
+		bottom: 0rem;
 		padding-top: 1.2rem;
 		left: 50%;
 		transform: translateX(-50%);
 	}
-	.preparation-page__permission-section {
-		margin-top: 3rem;
+	.intro-page__line {
+		position: fixed;
+		bottom: 5rem;
+		width: 100%;
+		left: 0;
 	}
 }
 .intro-page__user-greet {
@@ -217,9 +222,13 @@
 	border-radius: 0.25rem;
 	cursor: pointer;
 }
+.intro-page__line {
+	border: none;
+	border-top: 0.1rem solid #d1d5db;
+}
 .intro-page__contact-section {
 	text-align: center;
-	padding: 1.5rem 0;
+	padding: 1rem 0;
 	position: relative;
 }
 .intro-page__contact-section > span {
@@ -371,12 +380,12 @@
 	padding: 0.75rem 1rem;
 	display: flex;
 }
-.preparation-page__permission-icons{
+.preparation-page__permission-icons {
 	display: flex;
 	margin: auto 0;
-	gap: .5rem;
+	gap: 0.5rem;
 }
-.preparation-page__permission-icons img{
+.preparation-page__permission-icons img {
 	height: 1.75rem;
 }
 .preparation-page__permission-section button {
@@ -429,7 +438,7 @@
 		justify-content: space-between;
 		padding: 0.75rem 2rem;
 	}
-	.ensuring__content-wrapper{
+	.ensuring__content-wrapper {
 		height: 90vh;
 		place-content: center;
 	}
@@ -437,7 +446,7 @@
 		background-color: white;
 		border-radius: 0.25rem;
 		width: min(43.75rem, 90%);
-		height: min(34.875rem,100%);
+		height: min(34.875rem, 100%);
 		margin: auto;
 		display: flex;
 		flex-direction: column;
@@ -530,7 +539,6 @@
 	border-top: 1px solid #d1d5db;
 }
 
-
 /* Start Assessment Page */
 
 @media (min-width: 640px) {
@@ -545,7 +553,7 @@
 		justify-content: space-between;
 		padding: 0.75rem 2rem;
 	}
-	.start-assessment__content-wrapper{
+	.start-assessment__content-wrapper {
 		height: 90vh;
 		place-content: center;
 	}
@@ -553,7 +561,7 @@
 		background-color: white;
 		border-radius: 0.25rem;
 		width: min(43.75rem, 90%);
-		height: min(34.875rem,90%);
+		height: min(34.875rem, 90%);
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
@@ -571,9 +579,15 @@
 	}
 	.start-assessment__button-section {
 		position: fixed;
-		bottom: 0.75rem;
+		bottom: 1rem;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+	.start-assessment__line{
+		position: fixed;
+		bottom: 5rem;
+		width: 100%;
+		left: 0;
 	}
 }
 .start-assessment__navbar {
@@ -627,6 +641,11 @@
 	margin: 2.5rem 0;
 	line-height: 2.125rem;
 }
+
+.start-assessment__line{
+	border: none;
+	border-top: .1rem solid #d1d5db;
+}
 .start-assessment__button-section {
 	margin-top: auto;
 }
@@ -645,8 +664,6 @@
 	outline: none;
 }
 
-
-
 /* Submission page styles */
 
 @media (min-width: 640px) {
@@ -664,25 +681,25 @@
 		height: 389px;
 		margin: 0 auto;
 	}
-	.submit-page__button{
+	.submit-page__button {
 		margin: 1.5rem 0;
 	}
 }
 
-@media (max-width:639px) {
-	.submit-page__button{
+@media (max-width: 639px) {
+	.submit-page__button {
 		position: fixed;
 		bottom: 1rem;
 		left: 50%;
 		transform: translateX(-50%);
 	}
-	.submit-page__line{
+	.submit-page__line {
 		position: fixed;
 		bottom: 5rem;
 		left: 0;
-		 width: 100%;
-		 border: none;
-		 border-top: 2px solid #f5f5f5;
+		width: 100%;
+		border: none;
+		border-top: 2px solid #f5f5f5;
 	}
 }
 .submit-page__content {
@@ -704,7 +721,6 @@
 	line-height: 1.5rem;
 }
 .submit-page__button {
-	
 	background-color: #0f766e;
 	color: white;
 	padding: 0.75rem 1.5rem;
@@ -718,11 +734,11 @@
 	border: none;
 	outline: none;
 }
-.submit-page__contact{
+.submit-page__contact {
 	margin-top: 0.5rem;
 	font-size: 0.875rem;
 	font-weight: 400;
 }
-.submit-page__contact span{
+.submit-page__contact span {
 	font-weight: 600;
 }
