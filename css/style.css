@@ -31,6 +31,7 @@
 		padding: 1.5rem 0.75rem;
 		width: 43.75rem;
 		height: 37.75rem;
+		overflow-y: scroll;
 	}
 	.sign_in__line {
 		display: none;
@@ -154,6 +155,7 @@
 		margin-top: 0rem;
 		height: 100vh;
 		width: 100vw;
+		overflow-y: scroll;
 	}
 	.intro-page__content {
 		background-color: white;
@@ -251,6 +253,9 @@
 		padding: 0.75rem 1rem;
 		border-radius: 0.25rem;
 	}
+	.preparation-page__content{
+		overflow-y: scroll;
+	}
 	.preparation-page__content-main {
 		display: flex;
 		width: min(78.125rem, 90%);
@@ -289,7 +294,7 @@
 		display: flex;
 		justify-content: end;
 	}
-	.preparation-page__back-button{
+	.preparation-page__back-button {
 		display: none;
 	}
 	.preparation-page__line {
@@ -470,14 +475,15 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		overflow-y: scroll;
 	}
 	.ensuring__rule {
 		display: none;
 	}
-	.ensuring__back-button{
+	.ensuring__back-button {
 		display: none;
 	}
-	.ensuring__button-section{
+	.ensuring__button-section {
 		justify-content: center;
 	}
 }
@@ -588,6 +594,7 @@
 	.start-assessment__content-wrapper {
 		height: 90vh;
 		place-content: center;
+		overflow-y: scroll;
 	}
 	.start-assessment__content {
 		background-color: white;
