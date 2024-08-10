@@ -468,6 +468,7 @@
 	.ensuring__content-wrapper {
 		height: 90vh;
 		place-content: center;
+		margin: 1.5rem auto;
 	}
 	.ensuring__content {
 		background-color: white;
@@ -596,6 +597,7 @@
 	.start-assessment__content-wrapper {
 		height: 90vh;
 		place-content: center;
+		margin: 1.5rem auto;
 	}
 	.start-assessment__content {
 		background-color: white;
