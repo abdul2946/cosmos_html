@@ -457,7 +457,7 @@
 	.ensuring__main {
 		background-color: #f5f5f5;
 		padding-bottom: 1.5rem;
-		height: 100vh;
+		min-height: 100vh;
 	}
 	.ensuring__navbar {
 		width: 100%;
