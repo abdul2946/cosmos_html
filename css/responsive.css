@@ -1,6 +1,6 @@
 @media only screen and (max-width: 746px) {
     .screen-box{
-        /* align-items:center; */
+        align-items:center;
 
     }
     .Inventory-main-container{
@@ -12,7 +12,7 @@
         display: none;
     }
     .nav-container{
-        justify-content: center;
+        justify-content: unset;
         gap: 10px;
     }
     .nav-container-second{
@@ -29,7 +29,7 @@
     }
     .card-box {
         width: 100%;
-        height: calc(100vh - 156px);
+        height: calc(100vh - 60px - 60px - 10px);
    
         /* height: fit-content; */
         /* background-color: blue; */
