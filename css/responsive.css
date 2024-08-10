@@ -24,8 +24,7 @@
     }
     .card-box {
         width: 100%;
-        /* height: fit-content; */
-        /* background-color: blue; */
+        padding-bottom: 4rem;
     }
     
     .Inventory-answear-container {

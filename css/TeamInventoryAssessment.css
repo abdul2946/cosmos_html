@@ -66,7 +66,7 @@
 }
 .card-box{
     width: 90vw;
-    height: 80vh;
+    height: 100%;
     background-color: white;
     border-radius: 5px;
 }
@@ -81,6 +81,11 @@
     flex-direction: column;
     /* gap:2rem; */
     overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.card-box-secound::-webkit-scrollbar{
+    display: none;
 }
 .card-box-secound>div{
     background-color: white;
@@ -97,11 +102,21 @@
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+     scrollbar-width: none;
+    -ms-overflow-style: none;
     /* justify-content: center; */
     /* padding: 1rem 1.25rem; */
 }
+.thankyou-container-top::-webkit-scrollbar{
+    display: none;
+}
 .overflow-wraper{
     overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+.overflow-wraper::-webkit-scrollbar{
+    display: none;
 }
 .thankyou-body-container{
     display:flex;
