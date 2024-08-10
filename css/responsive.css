@@ -29,7 +29,7 @@
     }
     .card-box {
         width: 100%;
-        height: calc(100vh - 60px - 60px - 10px);
+        height: calc(100vh - 60px - 60px - 20px);
    
         /* height: fit-content; */
         /* background-color: blue; */
@@ -103,6 +103,9 @@
     .card-box-secound{
         width: 95vw;
     }
+    .thankyou-body-container{
+        margin-top: 2rem;
+    }
     .thankyou-body-progressBtn-container{
         flex-direction: column;
     }
@@ -159,7 +162,7 @@
     }
     .thankyou-container-top{
         background-color: unset !important;
-        height: calc(100vh - 60px - 60px - 2rem);
+        /* height: calc(100vh - 60px - 60px - 2rem); */
         overflow-y: scroll;
     }
     .review-radio-inner-container>label{
