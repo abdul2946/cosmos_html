@@ -253,12 +253,12 @@
 		width: min(78.125rem, 90%);
 		padding: 0.75rem 1rem;
 		border-radius: 0.25rem;
-		
+
 		margin: 0 auto;
 		margin-top: 4rem;
 		margin-bottom: 1rem;
 	}
-	
+
 	.preparation-page__content-main {
 		display: flex;
 		width: min(78.125rem, 90%);
@@ -348,7 +348,6 @@
 .preparation-page__content-menu-title {
 	font-size: 1.125rem;
 	font-weight: 700;
-	
 }
 .preparation-page__content-menu-subtitle {
 	font-size: 0.875rem;
@@ -470,6 +469,11 @@
 		place-content: center;
 		margin: 1.5rem auto;
 		overflow-y: auto;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.ensuring__content-wrapper::-webkit-scrollbar {
+		display: none;
 	}
 	.ensuring__content {
 		background-color: white;
@@ -599,6 +603,11 @@
 		place-content: center;
 		margin: 1.5rem auto;
 		overflow-y: auto;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.start-assessment__content-wrapper::-webkit-scrollbar {
+		display: none;
 	}
 	.start-assessment__content {
 		background-color: white;
