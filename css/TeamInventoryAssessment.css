@@ -81,6 +81,7 @@ body {
     gap:0.5rem;
     /* overflow-y: auto; */
     /* padding: 1rem 0; */
+    margin: 1rem 0;
 }
 .card-box-secound>div{
     background-color: white;
