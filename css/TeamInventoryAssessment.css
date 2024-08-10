@@ -63,6 +63,7 @@
 }
 
 .card-box-secound{
+	padding-top: 2rem;
     width: 70vw;
     height: 80vh;
     /* background-color: white; */
@@ -72,7 +73,7 @@
     flex-direction: column;
     gap:0.5rem;
     /* overflow-y: auto; */
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
 }
 .card-box-secound>div{
     background-color: white;
